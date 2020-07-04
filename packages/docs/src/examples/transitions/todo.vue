@@ -52,11 +52,7 @@
     <v-divider class="mb-4"></v-divider>
 
     <v-card v-if="tasks.length > 0">
-      <v-slide-y-transition
-        class="py-0"
-        group
-        tag="v-list"
-      >
+      <v-list class="py-0" group transition="slide-y-transition">
         <template v-for="(task, i) in tasks">
           <v-divider
             v-if="i !== 0"
@@ -88,7 +84,7 @@
               >
                 check
               </v-icon>
-            </v-scroll-x-transition>
+            </v-list>
           </v-list-item>
         </template>
       </v-slide-y-transition>
