@@ -6,7 +6,7 @@
       solo
       @keydown.enter="create"
     >
-      <v-fade-transition v-slot:append>
+      <v-fade-transition slot="append">
         <v-icon
           v-if="task"
           @click="create"
